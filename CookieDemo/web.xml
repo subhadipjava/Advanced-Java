@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         version="6.1">
+
+    <!-- Cookie Servlet -->
+    <servlet>
+        <servlet-name>CookieServlet</servlet-name>
+        <servlet-class>CookieServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CookieServlet</servlet-name>
+        <url-pattern>/CookieServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- View Cookies Servlet -->
+    <servlet>
+        <servlet-name>ViewCookies</servlet-name>
+        <servlet-class>ViewCookies</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ViewCookies</servlet-name>
+        <url-pattern>/ViewCookies</url-pattern>
+    </servlet-mapping>
+
+</web-app>
