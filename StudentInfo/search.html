@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Find Student</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .search-layout {
+            max-width: 650px;
+            margin: 0 auto 55px;
+            padding: 0 20px;
+        }
+
+        .search-card {
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 12px 35px rgba(20, 45, 85, 0.08);
+            border: 1px solid #e7edf5;
+        }
+
+        .search-card h2 {
+            margin-top: 0;
+            color: #152744;
+        }
+
+        .search-card label {
+            display: block;
+            margin: 18px 0 8px;
+            font-weight: 600;
+        }
+
+        .search-card input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 13px 14px;
+            border: 1px solid #d6dfeb;
+            border-radius: 9px;
+            font-size: 15px;
+        }
+
+        .search-card .submit-btn {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .search-card {
+                padding: 24px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand">Student<span>Hub.</span></div>
+        <nav>
+            <a href="register.html">Registration</a>
+            <a href="search.html">Find Student</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <span class="tag">Student Management System</span>
+        <h1>Find the <span style="color:#1b5fba">right record.</span></h1>
+        <p>Search student information quickly using a unique roll number.</p>
+    </section>
+
+    <main class="search-layout">
+        <section class="search-card">
+            <h2>Search student</h2>
+            <p class="subheading">Enter the roll number to find a registered student.</p>
+
+            <form action="search" method="get">
+                <label for="roll_no">Student Roll Number</label>
+                <input
+                    type="text"
+                    id="roll_no"
+                    name="roll_no"
+                    placeholder="e.g. STU101"
+                    required
+                >
+
+                <button class="submit-btn" type="submit">
+                    Search Student &rarr;
+                </button>
+            </form>
+
+            <div class="bottom-link">
+                New student? <a href="register.html">Register here</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        StudentHub &copy; 2026 · Student Information System
+    </footer>
+
+</body>
+</html>

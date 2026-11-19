@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="brand">Student<span>Hub.</span></div>
+        <nav>
+            <a href="register.html">Registration</a>
+            <a href="search.html">Find Student</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <span class="tag">Student Management System</span>
+        <h1>Every student, <span style="color:#1b5fba">one place.</span></h1>
+        <p>Register student information through a simple, organized, and easy-to-use interface.</p>
+    </section>
+
+    <main class="layout">
+
+        <aside class="side-panel">
+            <div class="symbol">✦</div>
+            <h2>Build your student record.</h2>
+            <p>Keep essential student details organized and accessible whenever you need them.</p>
+
+            <div class="features">
+                <div class="feature">
+                    <span class="check">✓</span>
+                    <span>Simple student registration</span>
+                </div>
+                <div class="feature">
+                    <span class="check">✓</span>
+                    <span>Database-backed records</span>
+                </div>
+                <div class="feature">
+                    <span class="check">✓</span>
+                    <span>Quick roll-number search</span>
+                </div>
+            </div>
+        </aside>
+
+        <section class="form-card">
+            <h2>Register a student</h2>
+            <p class="subheading">Enter the student's information below.</p>
+
+            <form action="register" method="post">
+                <div class="fields">
+
+                    <div class="field full">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name"
+                               placeholder="Enter full name" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="roll_no">Roll Number *</label>
+                        <input type="text" id="roll_no" name="roll_no"
+                               placeholder="e.g. STU101" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="department">Department</label>
+                        <input type="text" id="department" name="department"
+                               placeholder="e.g. CSE">
+                    </div>
+
+                    <div class="field full">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email"
+                               placeholder="student@example.com">
+                    </div>
+
+                    <div class="field full">
+                        <label for="age">Age *</label>
+                        <input type="number" id="age" name="age"
+                               placeholder="Enter age" min="1" max="150" required>
+                    </div>
+
+                </div>
+
+                <button class="submit-btn" type="submit">
+                    Register Student &rarr;
+                </button>
+            </form>
+
+            <div class="bottom-link">
+                Already registered? <a href="search.html">Find a student</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        StudentHub &copy; 2026 · Student Information System
+    </footer>
+
+</body>
+</html>
