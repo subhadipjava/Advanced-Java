@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Employee</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 400px;
+            margin: 60px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 9px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .back {
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Add Employee</h2>
+
+    <form action="AddEmployee" method="post">
+
+        <label>Employee ID:</label>
+        <input type="number" name="id" required>
+
+        <label>Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Department:</label>
+        <input type="text" name="department" required>
+
+        <label>Salary:</label>
+        <input type="number" name="salary" step="0.01" required>
+
+        <input type="submit" value="Add Employee">
+
+    </form>
+
+    <div class="back">
+        <a href="index.html">Back to Home</a>
+    </div>
+
+</div>
+
+</body>
+</html>
